@@ -2,7 +2,7 @@
 #
 #
 # Reference: https://docs.docker.com/registry/deploying/
-REGISTRY_IP=localhost
+REGISTRY_IP=${1:-localhost}
 
 nc -z $REGISTRY_IP 5000 || docker run -d -p 5000:5000 --restart=always --name registry registry:2
 

@@ -1,12 +1,13 @@
 # List of images to add (source: https://docs.openstack.org/magnum/latest/user/#container-infra-prefix )
+docker.io/openstackmagnum/heat-container-agent:ussuri-stable-1
 docker.io/coredns/coredns:1.6.6
 quay.io/coreos/etcd:v3.4.6
 gcr.io/google-containers/hyperkube:v1.18.2
-# docker.io/openstackmagnum/kubernetes-apiserver:v1.18.2
-# docker.io/openstackmagnum/kubernetes-controller-manager:v1.18.2
-# docker.io/openstackmagnum/kubernetes-kubelet:v1.18.2
-# docker.io/openstackmagnum/kubernetes-proxy:v1.18.2
-# docker.io/openstackmagnum/kubernetes-scheduler:v1.18.2
+# docker.io/rancher/kubernetes-apiserver:v1.18.2
+# gchr.io/openstackmagnum/kubernetes-controller-manager:v1.18.2
+# gchr.io/openstackmagnum/kubernetes-kubelet:v1.18.2
+# gchr.io/openstackmagnum/kubernetes-proxy:v1.18.2
+# gchr.io/openstackmagnum/kubernetes-scheduler:v1.18.2
 docker.io/k8scloudprovider/k8s-keystone-auth:v1.18.0
 gcr.io/google_containers/pause:3.1
 # Images that might be needed:
@@ -24,9 +25,7 @@ quay.io/calico/cni:v3.13.1
 quay.io/calico/pod2daemon-flexvol:v3.13.1
 quay.io/calico/kube-controllers:v3.13.1
 quay.io/calico/node:v3.13.1
-## flannel-cni fails to be uploaded to the registry because it's published with a v1 manifest format
-## "manifest schema v1 unsupported"
-# quay.io/coreos/flannel-cni:v0.3.0
+quay.io/coreos/flannel-cni:v0.3.0
 quay.io/coreos/flannel:v0.12.0-amd64
 ## # Images that might be needed if 'monitoring_enabled' is 'true':
 ## quay.io/prometheus/alertmanager:v0.20.0
