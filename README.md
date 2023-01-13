@@ -18,3 +18,5 @@ cat images-magnum-ussuri.txt | ./mirror-images.sh <REGISTRY_IP>
       --labels container_infra_prefix=<REGISTRY_IP>:5000/
   openstack coe cluster template update k8s-cluster-template replace insecure_registry=<REGISTRY_IP>:5000
   ```
+  
+  Upstream refence documentation: https://docs.openstack.org/magnum/latest/user/#container-infra-prefix
