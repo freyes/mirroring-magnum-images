@@ -1,0 +1,7 @@
+series: jammy
+applications:
+  docker-registry:
+    charm: ch:docker-registry
+    num_units: 1
+    # contraints try to match m1.orange flavor.
+    constraints: "allocate-public-ip=true root-disk=100G mem=7G"
